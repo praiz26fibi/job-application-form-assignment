@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form - Praise</title>
+</head>
+<body>
+    <h1>Tech Solution Ltd</h1>
+    <p>We build websites and mobile apps for businesses and companies in Nigeria.
+         Join our team and grow zour career with us.
+    </p>
+    <p><strong>Location:</strong> 12, Marina Road, Lagos, Nigeria | 
+        <strong>Email:</strong> careers@techsolution.ng
+    </p>
+
+    <hr>
+
+
+    <h2>Job Application Form</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+       <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullname" name="fullname" required autocomplete="name" placeholder="e.g Praise samuel">
+            <br><br>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" min="1" max="120" style="width: 200px;">
+            <br><br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob"  required>
+            <br><br>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@gmail.com">
+            <br><br>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" pattern="[+0-9 ]{10,15}" placeholder="+234 812345678" 
+            title="Enter 10 to 15 digits only">
+            <br><br>
+
+            <label for="address">Home Address</label>
+            <input type="text" id="address" name="address" required 
+                placeholder="House no, Street, Area, Lagos">
+            <br><br>    
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                 <option value="" >--select--</option>
+                 <option value="male">Male</option>
+                 <option value="female">Female</option>
+                 <option value="others">Others</option>
+            </select>
+            <br><br>
+
+            <label for="marital">Marital Status</label>
+            <select id="marital" name="marital" required>
+                <option value="" disabled selected>Select status</option>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+                <option value="widowed">Widowed</option>
+            </select>
+            <br><br>
+
+            <label for="nationality">Nationality</label>
+            <input type="text" id="nationality" name="nationality" required autocomplete="country-name" placeholder="e.g Nigerian">
+            <br><br>
+
+            <label for="state">State of Origin</label>
+            <input type="text" id="state" name="state" required placeholder="e.g Lagos State">
+            <br><br>
+
+
+        </fieldset>
+
+        <br>
+
+        <h3>Position Applied for</h3>
+        <label for="position">Position Applied For</label>
+        <select id="position" name="position" required>
+            <option value="" disabled selected>Select a position</option>
+            <option value="frontend">Frontend Engineer</option>
+            <option value="backend">Backend Engineer</option>
+            <option value="designer">UI/UX Designer</option>
+            <option value="pm">Product Manager</option>
+        </select>
+        <br><br>
+
+        <label for="startdate">Earliest Start Date</label>
+        <input type="date" id="startdate" name="startdate" required>
+        <br><br>
+
+        <label for="coverletter">Cover Letter</label>
+        <textarea id="coverletter" name="coverletter" rows="5" required placeholder="Tell us why you are good fit for the position"></textarea>
+        <br><br>
+
+        <label for="resume">Resume Upload (PDF, DOC)</label>
+        <input type="file" id="resume" name="resume" required accept=".pdf,.doc,.docx">
+        <br><br>
+
+        <fieldset>
+            <legend>How did you hear about us?</legend>
+            <label for="linkedin">LinkedIn</label>
+            <input type="radio" id="linkedin" name="hear" value="Linkedin" required>
+            
+            <label for="friend">Friend</label>
+            <input type="radio" id="friend" name="hear" value="Friend">
+
+            <label for="website">Website</label>
+            <input type="radio" id="website" name="hear" value="Website">
+
+            <label for="others">Others</label>
+            <input type="radio" id="others" name="hear" value="Others">
+
+        </fieldset>
+        <br>
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+</body>
+</html>
